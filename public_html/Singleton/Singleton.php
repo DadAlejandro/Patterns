@@ -6,7 +6,7 @@ class Singleton {
 
     private function __construct() { }
 
-    public function getInstance() {
+    public static function getInstance() {
         if ( empty( self::$instance ) ) {
             self::$instance = new Singleton();
         }
